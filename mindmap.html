@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>《丹麦父母的秘密》— P.A.R.E.N.T. 思维导图</title>
+<title>《丹麦父母的秘密》— P.A.R.E.N.T. 思维导引</title>
 
 <!-- Open Graph / Social Sharing -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="《丹麦父母的秘密》— P.A.R.E.N.T. 育儿框架思维导图">
+<meta property="og:title" content="《丹麦父母的秘密》— P.A.R.E.N.T. 育儿框架思维导引">
 <meta property="og:description" content="丹麦连续40年位居世界幸福榜首。他们的秘密？一套名为P.A.R.E.N.T.的育儿哲学。6大原则·8章精华·48个思维卡片·完整Q&A指南。">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="《丹麦父母的秘密》— P.A.R.E.N.T. 育儿框架">
@@ -104,8 +104,6 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .ch-subtitle { font-size: 0.85rem; opacity: .75; margin-bottom: 14px; }
 .ch-central { font-size: 0.9rem; line-height: 1.65; background: rgba(255,255,255,.25); border-radius: 10px; padding: 12px 16px; margin-bottom: 14px; }
 .ch-quote { font-style: italic; font-size: 0.85rem; opacity: .8; border-left: 3px solid rgba(255,255,255,.5); padding-left: 12px; margin-bottom: 16px; }
-.ch-read-btn { display: inline-block; padding: 8px 20px; border-radius: 20px; background: rgba(255,255,255,.9); font-size: 0.8rem; font-weight: 700; text-decoration: none; cursor: pointer; border: none; transition: all 0.2s; }
-.ch-read-btn:hover { background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.15); }
 
 .section-title { font-size: 1rem; font-weight: 700; color: var(--text); margin: 24px 0 12px; display: flex; align-items: center; gap: 8px; }
 
@@ -213,7 +211,7 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
       <div class="promo-desc">丹麦连续40年被评为世界最幸福国家。这不是巧合——他们的秘密藏在代代相传的育儿哲学中。P.A.R.E.N.T.六大原则帮你养育有韧性、情感健全、真正快乐的孩子。</div>
       <div class="promo-links">
         <a class="promo-link douban" href="https://book.douban.com/subject/26898335/" target="_blank">📖 豆瓣读书</a>
-        <a class="promo-link amazon" href="https://www.amazon.com/Danish-Way-Parenting-Happiest-Raising/dp/0143111701" target="_blank">🛒 Amazon</a>
+        
         <a class="promo-link goodreads" href="https://www.goodreads.com/book/show/28815322-the-danish-way-of-parenting?ref=nav_sb_ss_3_7" target="_blank">⭐ Goodreads</a>
       </div>
     </div>
@@ -362,12 +360,11 @@ function buildPanelHtml(ch, ci) {
     '<div class="ch-subtitle">' + esc(ch.subtitle) + '</div>' +
     '<div class="ch-central">' + esc(ch.central) + '</div>' +
     '<div class="ch-quote">' + esc(ch.quote) + '</div>' +
-    '<a class="ch-read-btn" href="https://book.douban.com/subject/26898335/" target="_blank" style="color:' + color + '">📖 阅读原书 ' + esc(ch.bookChapter) + ' →</a>' +
   '</div>' +
+  '<div class="section-title">🗺️ 5W1H 思维导引</div>' +
+  '<div class="cards-grid">' + wCardsHtml + '</div>' +
   '<div class="section-title">✅ 行动清单 — 现在就可以开始</div>' +
   '<div class="actions-grid">' + actionsHtml + '</div>' +
-  '<div class="section-title">🗺️ 5W1H 思维导图</div>' +
-  '<div class="cards-grid">' + wCardsHtml + '</div>' +
   '<div class="section-title">❓ 父母最常问的15个问题</div>' +
   '<div class="faq-list">' + faqsHtml + '</div>';
 }
